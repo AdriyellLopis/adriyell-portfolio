@@ -540,12 +540,31 @@ function base64ToBlob(base64, type){
   for(let i=0;i<byteChars.length;i++) byteNumbers[i] = byteChars.charCodeAt(i);
   return new Blob([new Uint8Array(byteNumbers)], {type});
 }
+function plainBrowserDownload(){
+  const blob = base64ToBlob(CV_BASE64, 'application/pdf');
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Adriyell_Lopis_CV.pdf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
 async function downloadCv(){
-  const downloads = await claude.use('downloads');
-  if(!downloads){ window.open('data:application/pdf;base64,' + CV_BASE64, '_blank'); return; }
+  // Outside the Claude artifact viewer (e.g. this site hosted on Vercel/GitHub Pages),
+  // window.claude does not exist at all, so fall back to a normal browser download.
+  if(typeof window.claude === 'undefined' || !window.claude || !window.claude.use){
+    plainBrowserDownload();
+    return;
+  }
   try {
+    const downloads = await claude.use('downloads');
+    if(!downloads){ plainBrowserDownload(); return; }
     await downloads.save({ filename: 'Adriyell_Lopis_CV.pdf', data: base64ToBlob(CV_BASE64, 'application/pdf') });
-  } catch(err) { /* viewer declined or another prompt was open; no action needed */ }
+  } catch(err) {
+    plainBrowserDownload();
+  }
 }
 ['heroDownloadCv','bandDownloadCv','bandViewCv'].forEach(id => {
   const el = document.getElementById(id);
