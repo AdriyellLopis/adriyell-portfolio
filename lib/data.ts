@@ -94,7 +94,6 @@ export const projects: Project[] = [
 
 export const education = [
   { qualification: "Diploma in IT – Network Management", institution: "IIE Rosebank College", year: "2022–2024", text: "Diploma in Information Technology specialising in Network Management." },
-  { qualification: "[Dynamic DNA / relevant IT programme]", institution: "[Institution]", year: "[Year]", text: "[Short description]" },
   { qualification: "Matric (National Senior Certificate)", institution: "St Barnabas College", year: "2017–2021", text: "" },
 ];
 
