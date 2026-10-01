@@ -69,7 +69,7 @@ export const projects: Project[] = [
   {
     title: "AI CareerBuddy Chatbot",
     description: "An AI-powered career assistant designed to help users with career guidance, CV support, interview preparation and professional development.",
-    problem: "[Describe the problem this project addresses]",
+    problem: "Job seekers, especially graduates entering the industry, often don't know how to improve their CV, prepare for interviews or plan their next career step, and personalised guidance is hard to access.",
     solution: "A chatbot that uses Generative AI and prompt engineering to give career guidance, CV support and interview preparation.",
     tech: ["AI", "Generative AI", "Prompt Engineering", "Chatbot Development", "Web Development", "GitHub"],
     contribution: "[Describe your contribution]", github: "https://github.com/AdriyellLopis", demo: "https://job-mojo-bot.vercel.app/",
@@ -80,15 +80,15 @@ export const projects: Project[] = [
     problem: "[Describe the problem this project addresses]",
     solution: "A content generation tool with a prompt library for producing blogs, emails and more.",
     tech: ["Generative AI", "Prompt Engineering", "AI Productivity Tools", "Web Development"],
-    contribution: "[Describe your contribution]", github: "https://github.com/AdriyellLopis", demo: "https://promptforge-ai-content-generator.vercel.app/",
+    contribution: "Designed the chatbot's purpose and prompts, built and tested the web interface, and deployed the project on Vercel as part of my CAPACITI programme.", github: "https://github.com/AdriyellLopis", demo: "https://promptforge-ai-content-generator.vercel.app/",
   },
   {
     title: "Personal Portfolio Website",
     description: "A professional portfolio built to showcase my IT experience, projects, education, certifications and professional development.",
-    problem: "[Describe the problem this project addresses]",
+    problem: "Writing emails, blog posts and other content from scratch is time-consuming, and getting useful results from AI tools depends on knowing how to write good prompts.",
     solution: "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion", "Vercel"],
-    contribution: "[Describe your contribution]", github: "https://github.com/AdriyellLopis", demo: "https://adriyell-portfolio.vercel.app/",
+    contribution: "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.", github: "https://github.com/AdriyellLopis", demo: "https://adriyell-portfolio.vercel.app/",
   },
 ];
 
