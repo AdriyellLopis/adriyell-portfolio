@@ -1,0 +1,11 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-cream text-ink font-sans antialiased; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@layer components {
+  .card { @apply rounded-3xl border border-white/70 bg-white/60 p-6 shadow-soft backdrop-blur-md; }
+  .btn { @apply inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender-deep; }
+  .btn-primary { @apply btn bg-ink text-white hover:bg-lavender-deep; }
+  .btn-soft { @apply btn border border-lavender-deep/30 bg-white/70 text-ink hover:bg-lavender; }
+  .chip { @apply rounded-full bg-lavender/70 px-3 py-1 text-xs font-medium text-ink; }
+}
