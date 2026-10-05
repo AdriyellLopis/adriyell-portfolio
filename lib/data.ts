@@ -147,6 +147,9 @@ export const projects: Project[] = [
       "https://adriyell-portfolio.vercel.app/",
   },
 
+  export const projects = [
+  // Other projects above...
+
   // CareerFit: AI Career Assistant
   {
     title: "CareerFit: AI Career Assistant",
@@ -167,17 +170,36 @@ export const projects: Project[] = [
       "GitHub",
     ],
     github:
-      "https://github.com/AdriyellLopis/job-mojo-bot.vercel.app/",
+      "https://github.com/AdriyellLopis/job-mojo-bot",
     demo:
       "https://job-mojo-bot.vercel.app/",
   },
+];
 
 export const education = [
-  { qualification: "Diploma in IT – Network Management", institution: "IIE Rosebank College", year: "2022–2024", text: "Diploma in Information Technology specialising in Network Management." },
-  { qualification: "Matric (National Senior Certificate)", institution: "St Barnabas College", year: "2017–2021", text: "" },
+  {
+    qualification: "Diploma in IT – Network Management",
+    institution: "IIE Rosebank College",
+    year: "2022–2024",
+    text: "Diploma in Information Technology specialising in Network Management.",
+  },
+  {
+    qualification: "Matric (National Senior Certificate)",
+    institution: "St Barnabas College",
+    year: "2017–2021",
+    text: "",
+  },
 ];
 
 export const certifications = [
-  { name: "AI For Everyone", issuer: "Coursera · DeepLearning.AI", url: "https://coursera.org/share/237e3673faa3b9781e9aa3c7d52804aa" },
-  { name: "Introduction to Artificial Intelligence (AI)", issuer: "Coursera · IBM", url: "https://coursera.org/share/5760e79f13ecbc585c6abb3dc5113255" },
+  {
+    name: "AI For Everyone",
+    issuer: "Coursera · DeepLearning.AI",
+    url: "https://coursera.org/share/237e3673faa3b9781e9aa3c7d52804aa",
+  },
+  {
+    name: "Introduction to Artificial Intelligence (AI)",
+    issuer: "Coursera · IBM",
+    url: "https://coursera.org/share/5760e79f13ecbc585c6abb3dc5113255",
+  },
 ];
