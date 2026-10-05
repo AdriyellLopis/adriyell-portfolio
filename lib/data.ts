@@ -187,17 +187,6 @@ export const education = [
     text: "",
   },
 ];
-    qualification: "Diploma in IT – Network Management",
-    institution: "IIE Rosebank College",
-    year: "2022–2024",
-    text: "Diploma in Information Technology specialising in Network Management.",
-  {
-    qualification: "Matric (National Senior Certificate)",
-    institution: "St Barnabas College",
-    year: "2017–2021",
-    text: "",
-  },
-
 export const certifications = [
   {
     name: "AI For Everyone",
