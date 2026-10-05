@@ -60,69 +60,118 @@ export const skills = [
   { title: "Professional Skills", items: ["Communication", "Teamwork", "Problem Solving", "Critical Thinking", "Adaptability", "Time Management", "Collaboration", "Continuous Learning"] },
 ];
 
-// ➕ To add a project, copy one object below. `image` is optional (e.g. "/images/projects/foo.png").
+// ➕ Projects
 export type Project = {
-  title: string; description: string; problem: string; solution: string; tech: string[];
-  contribution: string; github: string; demo: string; image?: string;
+  title: string;
+  description: string;
+  problem: string;
+  solution: string;
+  tech: string[];
+  contribution: string;
+  github: string;
+  demo: string;
+  image?: string;
 };
-// NEW PROJECT: add this to your projects list
-{
-  title: "Amapiano Vibes: Sentiment Analysis Dashboard",
-  description:
-    "A browser-based sentiment analysis dashboard that reads social posts about amapiano and shows whether people are vibing or over it.",
-  problem:
-    "A trending topic like amapiano generates thousands of opinions online, and it is hard to see at a glance what people love, what frustrates them and what could be improved.",
-  solution:
-    "A sentiment analysis tool, built as a Python script and an interactive dashboard, that scores each post, groups it by topic (Sound, Artists, Events, Going Global) and turns the results into a mood reading, charts and a written insights report.",
-  contribution:
-    "Designed and built the sentiment engine and dashboard with AI assistance, wrote the data insights report and technical explanation, tested the tool on a sample dataset, and deployed it on Vercel through GitHub as part of my CAPACITI programme.",
-  tags: ["Sentiment Analysis", "NLP", "Python", "Data Visualisation", "Web Development", "GitHub"],
-  githubUrl: "https://github.com/AdriyellLopis/amapiano-vibes-sentiment-tool",
-  liveUrl: "https://amapiano-vibes-sentiment-tool.vercel.app/",
-},
 
-// FIXED: AI Content Generator (only "contribution" changes)
-{
-  title: "AI Content Generator",
-  description:
-    "An AI productivity project exploring content generation and AI-assisted workflows.",
-  problem:
-    "Writing emails, blog posts and other content from scratch is time-consuming, and getting useful results from AI tools depends on knowing how to write good prompts.",
-  solution:
-    "A content generation tool with a prompt library for producing blogs, emails and more.",
-  contribution:
-    "Designed the tool's purpose and prompt library, built and tested the web interface, and deployed the project on Vercel as part of my CAPACITI programme.",
-  tags: ["Generative AI", "Prompt Engineering", "AI Productivity Tools", "Web Development"],
-  githubUrl: "https://github.com/AdriyellLopis/promptforge-ai-content-generator",
-  liveUrl: "https://promptforge-ai-content-generator.vercel.app/",
-},
+export const projects: Project[] = [
+  // Amapiano Vibes: Sentiment Analysis Dashboard
+  {
+    title: "Amapiano Vibes: Sentiment Analysis Dashboard",
+    description:
+      "A browser-based sentiment analysis dashboard that reads social posts about amapiano and shows whether people are vibing or over it.",
+    problem:
+      "A trending topic like amapiano generates thousands of opinions online, and it is hard to see at a glance what people love, what frustrates them and what could be improved.",
+    solution:
+      "A sentiment analysis tool, built as a Python script and an interactive dashboard, that scores each post, groups it by topic (Sound, Artists, Events, Going Global) and turns the results into a mood reading, charts and a written insights report.",
+    contribution:
+      "Designed and built the sentiment engine and dashboard with AI assistance, wrote the data insights report and technical explanation, tested the tool on a sample dataset, and deployed it on Vercel through GitHub as part of my CAPACITI programme.",
+    tech: [
+      "Sentiment Analysis",
+      "NLP",
+      "Python",
+      "Data Visualisation",
+      "Web Development",
+      "GitHub",
+    ],
+    github:
+      "https://github.com/AdriyellLopis/amapiano-vibes-sentiment-tool",
+    demo:
+      "https://amapiano-vibes-sentiment-tool.vercel.app/",
+  },
 
-// FIXED: Personal Portfolio Website (only "problem" changes)
-{
-  title: "Personal Portfolio Website",
-  description:
-    "A professional portfolio built to showcase my IT experience, projects, education, certifications and professional development.",
-  problem:
-    "A CV alone is a limited way to show skills to employers, and there was no single place that brought my experience, projects, certifications and contact details together.",
-  solution:
-    "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
-  contribution:
-    "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.",
-  tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion", "Vercel"],
-  githubUrl: "https://github.com/AdriyellLopis/adriyell-portfolio",
-  liveUrl: "https://adriyell-portfolio.vercel.app/",
-},
-   {
+  // AI Content Generator
+  {
+    title: "AI Content Generator",
+    description:
+      "An AI productivity project exploring content generation and AI-assisted workflows.",
+    problem:
+      "Writing emails, blog posts and other content from scratch is time-consuming, and getting useful results from AI tools depends on knowing how to write good prompts.",
+    solution:
+      "A content generation tool with a prompt library for producing blogs, emails and more.",
+    contribution:
+      "Designed the tool's purpose and prompt library, built and tested the web interface, and deployed the project on Vercel as part of my CAPACITI programme.",
+    tech: [
+      "Generative AI",
+      "Prompt Engineering",
+      "AI Productivity Tools",
+      "Web Development",
+    ],
+    github:
+      "https://github.com/AdriyellLopis/promptforge-ai-content-generator",
+    demo:
+      "https://promptforge-ai-content-generator.vercel.app/",
+  },
+
+  // Personal Portfolio Website
+  {
+    title: "Personal Portfolio Website",
+    description:
+      "A professional portfolio built to showcase my IT experience, projects, education, certifications and professional development.",
+    problem:
+      "A CV alone is a limited way to show skills to employers, and there was no single place that brought my experience, projects, certifications and contact details together.",
+    solution:
+      "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
+    contribution:
+      "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Motion",
+      "Vercel",
+    ],
+    github:
+      "https://github.com/AdriyellLopis/adriyell-portfolio",
+    demo:
+      "https://adriyell-portfolio.vercel.app/",
+  },
+
+  // CareerFit: AI Career Assistant
+  {
     title: "CareerFit: AI Career Assistant",
-    description: "An AI career assistant that compares your CV with a job description to give a match score, missing keywords, interview preparation and a tailored CV.",
-    problem: "Job seekers, especially graduates entering the industry, often don't know how to improve their CV, prepare for interviews or plan their next career step, and personalised guidance is hard to access.",
-    solution: "A web app where users upload their CV and a job description (PDF, DOCX or text) and get a match score, missing ATS keywords, interview prep, a chat assistant and a downloadable tailored CV. Nothing is stored, so everything clears when the page is refreshed.",
-    tech: ["AI", "Generative AI", "Prompt Engineering", "Chatbot Development", "Web Development", "GitHub"],
-    contribution: "contribution: "Worked in a team on this Week 1 CAPACITI project. My part was designing the assistant's purpose and prompts, and helping deploy it on Vercel.",
-    github: "https://github.com/AdriyellLopis/job-mojo-bot.vercel.app/",
-    demo: "https://job-mojo-bot.vercel.app/",
+    description:
+      "An AI career assistant that compares your CV with a job description to give a match score, missing keywords, interview preparation and a tailored CV.",
+    problem:
+      "Job seekers, especially graduates entering the industry, often don't know how to improve their CV, prepare for interviews or plan their next career step, and personalised guidance is hard to access.",
+    solution:
+      "A web app where users upload their CV and a job description (PDF, DOCX or text) and get a match score, missing ATS keywords, interview preparation, a chat assistant and a downloadable tailored CV. Nothing is stored, so everything clears when the page is refreshed.",
+    contribution:
+      "Worked in a team on this Week 1 CAPACITI project. My part was designing the assistant's purpose and prompts, and helping deploy it on Vercel.",
+    tech: [
+      "AI",
+      "Generative AI",
+      "Prompt Engineering",
+      "Chatbot Development",
+      "Web Development",
+      "GitHub",
+    ],
+    github:
+      "https://github.com/AdriyellLopis/job-mojo-bot.vercel.app/",
+    demo:
+      "https://job-mojo-bot.vercel.app/",
   },
-  },
+];
 ];
 
 export const education = [
