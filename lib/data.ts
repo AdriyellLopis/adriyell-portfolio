@@ -171,9 +171,7 @@ export const projects: Project[] = [
     demo:
       "https://job-mojo-bot.vercel.app/",
   },
-];
-
-export const education = [
+];export const education = [
   {
     qualification: "Diploma in IT – Network Management",
     institution: "IIE Rosebank College",
@@ -187,6 +185,7 @@ export const education = [
     text: "",
   },
 ];
+
 export const certifications = [
   {
     name: "AI For Everyone",
