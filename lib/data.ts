@@ -172,7 +172,6 @@ export const projects: Project[] = [
       "https://job-mojo-bot.vercel.app/",
   },
 ];
-];
 
 export const education = [
   { qualification: "Diploma in IT – Network Management", institution: "IIE Rosebank College", year: "2022–2024", text: "Diploma in Information Technology specialising in Network Management." },
