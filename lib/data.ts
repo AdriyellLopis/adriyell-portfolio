@@ -127,7 +127,7 @@ export const projects: Project[] = [
     title: "Personal Portfolio Website",
     description:
       "A professional portfolio built to showcase my IT experience, projects, education, certifications and professional development.",
-    problem:
+       problem:
       "A CV alone is a limited way to show skills to employers, and there was no single place that brought my experience, projects, certifications and contact details together.",
     solution:
       "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
@@ -146,9 +146,6 @@ export const projects: Project[] = [
     demo:
       "https://adriyell-portfolio.vercel.app/",
   },
-
-  export const projects = [
-  // Other projects above...
 
   // CareerFit: AI Career Assistant
   {
@@ -190,6 +187,16 @@ export const education = [
     text: "",
   },
 ];
+    qualification: "Diploma in IT – Network Management",
+    institution: "IIE Rosebank College",
+    year: "2022–2024",
+    text: "Diploma in Information Technology specialising in Network Management.",
+  {
+    qualification: "Matric (National Senior Certificate)",
+    institution: "St Barnabas College",
+    year: "2017–2021",
+    text: "",
+  },
 
 export const certifications = [
   {
