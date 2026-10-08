@@ -74,29 +74,14 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  // Amapiano Vibes: Sentiment Analysis Dashboard
-  {
-    title: "Amapiano Vibes: Sentiment Analysis Dashboard",
-    description:
-      "A browser-based sentiment analysis dashboard that reads social posts about amapiano and shows whether people are vibing or over it.",
-    problem:
-      "A trending topic like amapiano generates thousands of opinions online, and it is hard to see at a glance what people love, what frustrates them and what could be improved.",
-    solution:
-      "A sentiment analysis tool, built as a Python script and an interactive dashboard, that scores each post, groups it by topic (Sound, Artists, Events, Going Global) and turns the results into a mood reading, charts and a written insights report.",
-    contribution:
-      "Designed and built the sentiment engine and dashboard with AI assistance, wrote the data insights report and technical explanation, tested the tool on a sample dataset, and deployed it on Vercel through GitHub as part of my CAPACITI programme.",
-    tech: [
-      "Sentiment Analysis",
-      "NLP",
-      "Python",
-      "Data Visualisation",
-      "Web Development",
-      "GitHub",
-    ],
-    github:
-      "https://github.com/AdriyellLopis/amapiano-vibes-sentiment-tool",
-    demo:
-      "https://amapiano-vibes-sentiment-tool.vercel.app/",
+  title: "Review Radar: Sentiment Analysis Dashboard",
+    description: "A Python dashboard that analyses real Amazon phone-accessory reviews, shows what customers like and complain about, and checks its own accuracy.",
+    problem: "Businesses receive far more customer reviews than anyone can read, so it is hard to see which parts of a product customers like and which cause complaints.",
+    solution: "A Python dashboard that classifies each review as positive, neutral or negative, groups reviews by topic (battery, sound, comfort and build, price, service) and compares its answers with human labels. In my analysis, battery and charging drew the most complaints (75% negative) and the tool scored 75.8% accuracy on reviews it had never been tuned on.",
+    tech: ["Sentiment Analysis", "NLP", "Python", "Streamlit", "Data Visualisation", "GitHub"],
+    contribution: "Chose a real public dataset, built the sentiment engine and Streamlit dashboard with AI assistance, tested it against human labels using a train and test split, wrote the data insights report and technical explanation, and deployed it on Streamlit Community Cloud through GitHub.",
+    github: "https://github.com/AdriyellLopis/review-radar-dashboard",
+    demo: "https://review-radar-dashb.streamlit.app/", // 
   },
 
   // AI Content Generator
