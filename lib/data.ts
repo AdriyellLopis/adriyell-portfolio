@@ -60,126 +60,57 @@ export const skills = [
   { title: "Professional Skills", items: ["Communication", "Teamwork", "Problem Solving", "Critical Thinking", "Adaptability", "Time Management", "Collaboration", "Continuous Learning"] },
 ];
 
-// ➕ Projects
+// ➕ To add a project, copy one object below. `image` is optional (e.g. "/images/projects/foo.png").
 export type Project = {
-  title: string;
-  description: string;
-  problem: string;
-  solution: string;
-  tech: string[];
-  contribution: string;
-  github: string;
-  demo: string;
-  image?: string;
+  title: string; description: string; problem: string; solution: string; tech: string[];
+  contribution: string; github: string; demo: string; image?: string;
 };
-
 export const projects: Project[] = [
-  title: "Review Radar: Sentiment Analysis Dashboard",
+  {
+    title: "CareerFit: AI Career Assistant",
+    description: "An AI career assistant that compares your CV with a job description to give a match score, missing keywords, interview preparation and a tailored CV.",
+    problem: "Job seekers, especially graduates entering the industry, often don't know how to improve their CV, prepare for interviews or plan their next career step, and personalised guidance is hard to access.",
+    solution: "A web app where users upload their CV and a job description (PDF, DOCX or text) and get a match score, missing ATS keywords, interview prep, a chat assistant and a downloadable tailored CV. Nothing is stored, so everything clears when the page is refreshed.",
+    tech: ["AI", "Generative AI", "Prompt Engineering", "Chatbot Development", "Web Development", "GitHub"],
+    contribution: "Worked in a team on this Week 1 CAPACITI project. My part was designing the assistant's purpose and prompts, building and testing the web interface, and helping deploy it on Vercel.",
+    github: "https://github.com/AdriyellLopis/job-mojo-bot.vercel.app/", demo: "https://job-mojo-bot.vercel.app/",
+  },
+  {
+    title: "AI Content Generator",
+    description: "An AI productivity project exploring content generation and AI-assisted workflows.",
+    problem: "Writing emails, blog posts and other content from scratch is time-consuming, and getting useful results from AI tools depends on knowing how to write good prompts.",
+    solution: "A content generation tool with a prompt library for producing blogs, emails and more.",
+    tech: ["Generative AI", "Prompt Engineering", "AI Productivity Tools", "Web Development"],
+    contribution: "Designed the tool's purpose and prompt library, built and tested the web interface, and deployed the project on Vercel as part of my CAPACITI programme.",
+    github: "https://github.com/AdriyellLopis/promptforge-ai-content-generator.vercel.app/", demo: "https://promptforge-ai-content-generator.vercel.app/",
+  },
+  {
+    title: "Review Radar: Sentiment Analysis Dashboard",
     description: "A Python dashboard that analyses real Amazon phone-accessory reviews, shows what customers like and complain about, and checks its own accuracy.",
     problem: "Businesses receive far more customer reviews than anyone can read, so it is hard to see which parts of a product customers like and which cause complaints.",
     solution: "A Python dashboard that classifies each review as positive, neutral or negative, groups reviews by topic (battery, sound, comfort and build, price, service) and compares its answers with human labels. In my analysis, battery and charging drew the most complaints (75% negative) and the tool scored 75.8% accuracy on reviews it had never been tuned on.",
     tech: ["Sentiment Analysis", "NLP", "Python", "Streamlit", "Data Visualisation", "GitHub"],
     contribution: "Chose a real public dataset, built the sentiment engine and Streamlit dashboard with AI assistance, tested it against human labels using a train and test split, wrote the data insights report and technical explanation, and deployed it on Streamlit Community Cloud through GitHub.",
-    github: "https://github.com/AdriyellLopis/review-radar-dashboard",
-    demo: "https://review-radar-dashb.streamlit.app/", // 
+    github: "https://github.com/AdriyellLopis/review-radar-dashboard", demo: "https://review-radar-dashb.streamlit.app/",
   },
-
-  // AI Content Generator
-  {
-    title: "AI Content Generator",
-    description:
-      "An AI productivity project exploring content generation and AI-assisted workflows.",
-    problem:
-      "Writing emails, blog posts and other content from scratch is time-consuming, and getting useful results from AI tools depends on knowing how to write good prompts.",
-    solution:
-      "A content generation tool with a prompt library for producing blogs, emails and more.",
-    contribution:
-      "Designed the tool's purpose and prompt library, built and tested the web interface, and deployed the project on Vercel as part of my CAPACITI programme.",
-    tech: [
-      "Generative AI",
-      "Prompt Engineering",
-      "AI Productivity Tools",
-      "Web Development",
-    ],
-    github:
-      "https://github.com/AdriyellLopis/promptforge-ai-content-generator",
-    demo:
-      "https://promptforge-ai-content-generator.vercel.app/",
-  },
-
-  // Personal Portfolio Website
   {
     title: "Personal Portfolio Website",
-    description:
-      "A professional portfolio built to showcase my IT experience, projects, education, certifications and professional development.",
-       problem:
-      "A CV alone is a limited way to show skills to employers, and there was no single place that brought my experience, projects, certifications and contact details together.",
-    solution:
-      "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
-    contribution:
-      "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.",
-    tech: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Motion",
-      "Vercel",
-    ],
-    github:
-      "https://github.com/AdriyellLopis/adriyell-portfolio",
-    demo:
-      "https://adriyell-portfolio.vercel.app/",
-  },
-
-  // CareerFit: AI Career Assistant
-  {
-    title: "CareerFit: AI Career Assistant",
-    description:
-      "An AI career assistant that compares your CV with a job description to give a match score, missing keywords, interview preparation and a tailored CV.",
-    problem:
-      "Job seekers, especially graduates entering the industry, often don't know how to improve their CV, prepare for interviews or plan their next career step, and personalised guidance is hard to access.",
-    solution:
-      "A web app where users upload their CV and a job description (PDF, DOCX or text) and get a match score, missing ATS keywords, interview preparation, a chat assistant and a downloadable tailored CV. Nothing is stored, so everything clears when the page is refreshed.",
-    contribution:
-      "Worked in a team on this Week 1 CAPACITI project. My part was designing the assistant's purpose and prompts, and helping deploy it on Vercel.",
-    tech: [
-      "AI",
-      "Generative AI",
-      "Prompt Engineering",
-      "Chatbot Development",
-      "Web Development",
-      "GitHub",
-    ],
-    github:
-      "https://github.com/AdriyellLopis/job-mojo-bot",
-    demo:
-      "https://job-mojo-bot.vercel.app/",
-  },
-];export const education = [
-  {
-    qualification: "Diploma in IT – Network Management",
-    institution: "IIE Rosebank College",
-    year: "2022–2024",
-    text: "Diploma in Information Technology specialising in Network Management.",
-  },
-  {
-    qualification: "Matric (National Senior Certificate)",
-    institution: "St Barnabas College",
-    year: "2017–2021",
-    text: "",
+    description: "A professional portfolio built to showcase my IT experience, projects, education, certifications and professional development.",
+    problem: "A CV alone is a limited way to show skills to employers, and there was no single place that brought my experience, projects, certifications and contact details together.",
+    solution: "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion", "Vercel"],
+    contribution: "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.",
+    github: "https://github.com/AdriyellLopis/adriyell-portfolio.vercel.app/", demo: "https://adriyell-portfolio.vercel.app/",
   },
 ];
 
+export const education = [
+  { qualification: "Diploma in IT – Network Management", institution: "IIE Rosebank College", year: "2022–2024", text: "Diploma in Information Technology specialising in Network Management." },
+  { qualification: "Matric (National Senior Certificate)", institution: "St Barnabas College", year: "2017–2021", text: "" },
+];
+
 export const certifications = [
-  {
-    name: "AI For Everyone",
-    issuer: "Coursera · DeepLearning.AI",
-    url: "https://coursera.org/share/237e3673faa3b9781e9aa3c7d52804aa",
-  },
-  {
-    name: "Introduction to Artificial Intelligence (AI)",
-    issuer: "Coursera · IBM",
-    url: "https://coursera.org/share/5760e79f13ecbc585c6abb3dc5113255",
-  },
+  { name: "AI For Everyone", issuer: "Coursera · DeepLearning.AI", url: "https://coursera.org/share/237e3673faa3b9781e9aa3c7d52804aa" },
+  { name: "Introduction to Artificial Intelligence (AI)", issuer: "Coursera · IBM", url: "https://coursera.org/share/5760e79f13ecbc585c6abb3dc5113255" }
+  { name: "Python for Data Science , AI & Development", issuer: Coursera · IBM", url: "https://www.coursera.org/account/accomplishments/verify/OVSYEIQFRWHM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" }
 ];
