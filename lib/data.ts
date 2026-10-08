@@ -73,7 +73,7 @@ export const projects: Project[] = [
     solution: "A web app where users upload their CV and a job description (PDF, DOCX or text) and get a match score, missing ATS keywords, interview prep, a chat assistant and a downloadable tailored CV. Nothing is stored, so everything clears when the page is refreshed.",
     tech: ["AI", "Generative AI", "Prompt Engineering", "Chatbot Development", "Web Development", "GitHub"],
     contribution: "Worked in a team on this Week 1 CAPACITI project. My part was designing the assistant's purpose and prompts, building and testing the web interface, and helping deploy it on Vercel.",
-    github: "https://github.com/AdriyellLopis/job-mojo-bot.vercel.app/", demo: "https://job-mojo-bot.vercel.app/",
+    github: "https://github.com/Luyolo23/job-mojo-bot", demo: "https://job-mojo-bot.vercel.app/",
   },
   {
     title: "AI Content Generator",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     solution: "A content generation tool with a prompt library for producing blogs, emails and more.",
     tech: ["Generative AI", "Prompt Engineering", "AI Productivity Tools", "Web Development"],
     contribution: "Designed the tool's purpose and prompt library, built and tested the web interface, and deployed the project on Vercel as part of my CAPACITI programme.",
-    github: "https://github.com/AdriyellLopis/promptforge-ai-content-generator.vercel.app/", demo: "https://promptforge-ai-content-generator.vercel.app/",
+    github: "https://github.com/AdriyellLopis/promptforge-ai-content-generator", demo: "https://promptforge-ai-content-generator.vercel.app/",
   },
   {
     title: "Review Radar: Sentiment Analysis Dashboard",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     solution: "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion", "Vercel"],
     contribution: "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.",
-    github: "https://github.com/AdriyellLopis/adriyell-portfolio.vercel.app/", demo: "https://adriyell-portfolio.vercel.app/",
+    github: "https://github.com/AdriyellLopis/adriyell-portfolio", demo: "https://adriyell-portfolio.vercel.app/",
   },
 ];
 
