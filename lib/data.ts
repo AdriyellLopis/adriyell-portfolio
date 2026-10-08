@@ -111,6 +111,6 @@ export const education = [
 
 export const certifications = [
   { name: "AI For Everyone", issuer: "Coursera · DeepLearning.AI", url: "https://coursera.org/share/237e3673faa3b9781e9aa3c7d52804aa" },
-  { name: "Introduction to Artificial Intelligence (AI)", issuer: "Coursera · IBM", url: "https://coursera.org/share/5760e79f13ecbc585c6abb3dc5113255" }
-  { name: "Python for Data Science , AI & Development", issuer: Coursera · IBM", url: "https://www.coursera.org/account/accomplishments/verify/OVSYEIQFRWHM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" }
+  { name: "Introduction to Artificial Intelligence (AI)", issuer: "Coursera · IBM", url: "https://coursera.org/share/5760e79f13ecbc585c6abb3dc5113255" },
+  { name: "Python for Data Science, AI & Development", issuer: "Coursera · IBM", url: "https://www.coursera.org/account/accomplishments/verify/OVSYEIQFRWHM" },
 ];
