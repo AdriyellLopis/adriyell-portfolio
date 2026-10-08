@@ -100,7 +100,7 @@ export const projects: Project[] = [
     solution: "A responsive, accessible portfolio built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion", "Vercel"],
     contribution: "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.",
-    github: "https://github.com/AdriyellLopis/adriyell-portfolio", demo: "https://adriyell-portfolio.vercel.app/",
+    github: "https://github.com/AdriyellLopis/adriyell-portfolio", demo: "https://adriyell-portfolio-3o96.vercel.app/",
   },
 ];
 
