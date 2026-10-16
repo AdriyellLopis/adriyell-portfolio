@@ -110,7 +110,7 @@ export const projects: Project[] = [
   tech: ["Python", "scikit-learn", "Streamlit", "Pandas", "Plotly", "NLP"],
   contribution: "Designed the end-to-end solution, built the classification and safety-rule logic, the dashboard, and the documentation, including limitations and responsible AI considerations.",
   github: "https://github.com/AdriyellLopis/civicroute-ai",
-  demo: "https://civicroute-ai-09.streamlit.app/"
+  demo: "https://civicroute-ai.streamlit.app/"
 }
 ];
 
