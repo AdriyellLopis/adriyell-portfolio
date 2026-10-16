@@ -109,7 +109,7 @@ export const projects: Project[] = [
   solution: "A text classification pipeline (TF-IDF with Logistic Regression) predicts category and urgency. Safety rules can only raise urgency, never lower it. Low-confidence, off-topic and critical tickets go to a human officer. A Streamlit dashboard shows queues, workload by department and urgency, with an architecture view and a responsible AI section.",
   tech: ["Python", "scikit-learn", "Streamlit", "Pandas", "Plotly", "NLP"],
   contribution: "Designed the end-to-end solution, built the classification and safety-rule logic, the dashboard, and the documentation, including limitations and responsible AI considerations.",
-  github: "https://github.com/AdriyellLopis/civicroute-ai",
+  github: "https://github.com/AdriyellLopis/civicroute-ai-",
   demo: "https://civicroute-ai.streamlit.app/"
 }
 ];
