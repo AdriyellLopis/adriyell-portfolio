@@ -94,6 +94,20 @@ export const projects: Project[] = [
     github: "https://github.com/AdriyellLopis/review-radar-dashboard", demo: "https://review-radar-dashb.streamlit.app/",
   },
   {
+  title: "CityFix: Municipal Service Request Router",
+  description:
+    "An AI workflow that reads resident complaints, classifies the type and urgency, routes each one to the right municipal department, and lets the resident get replies and follow up by SMS or in the app, with a human officer reviewing critical or uncertain cases.",
+  problem:
+    "Municipal call centres sort thousands of free-text complaints by hand. Sorting is slow and inconsistent, and dangerous issues such as fallen power lines wait in the same queue as minor requests.",
+  solution:
+    "A text classification pipeline (TF-IDF with Logistic Regression) predicts category and urgency, and safety rules can only raise urgency, never lower it. Residents type their problem and address, optionally give a cell number for SMS updates, get an instant reply with a reference number, and can track their request and reply back. Officers answer from a PIN-protected staff portal, correct the AI, and retrain the models from those corrections. Critical, uncertain and off-topic tickets always go to a human.",
+  tech: ["Python", "scikit-learn", "Streamlit", "Pandas", "Plotly", "SQLite", "SMS", "NLP"],
+  contribution:
+    "Designed the end-to-end solution and built the classification and safety-rule logic, the two-way ticket workflow, the resident and staff portals, the dashboard, and the documentation, including limitations and responsible AI considerations.",
+  github: "https://github.com/AdriyellLopis/cityfix-ai",
+  demo: "https://cityfix-ai.streamlit.app/",
+},
+{
     title: "Personal Portfolio Website",
     description: "A professional portfolio built to showcase my IT experience, projects, education, certifications and professional development.",
     problem: "A CV alone is a limited way to show skills to employers, and there was no single place that brought my experience, projects, certifications and contact details together.",
@@ -102,16 +116,6 @@ export const projects: Project[] = [
     contribution: "Defined the content, design direction and structure, added my own CV, projects and certifications, and deployed it through GitHub and Vercel.",
     github: "https://github.com/AdriyellLopis/adriyell-portfolio", demo: "https://adriyell-portfolio-3o96.vercel.app/",
   },
-  {
-  title: "CivicRoute: Municipal Service Request Router",
-  description: "An AI workflow that reads resident complaints, classifies the type and urgency, and routes each one to the right municipal department, with a human officer reviewing critical or uncertain cases.",
-  problem: "Municipal call centres sort thousands of free-text complaints by hand. Sorting is slow and inconsistent, and dangerous issues such as fallen power lines wait in the same queue as minor requests.",
-  solution: "A text classification pipeline (TF-IDF with Logistic Regression) predicts category and urgency. Safety rules can only raise urgency, never lower it. Low-confidence, off-topic and critical tickets go to a human officer. A Streamlit dashboard shows queues, workload by department and urgency, with an architecture view and a responsible AI section.",
-  tech: ["Python", "scikit-learn", "Streamlit", "Pandas", "Plotly", "NLP"],
-  contribution: "Designed the end-to-end solution, built the classification and safety-rule logic, the dashboard, and the documentation, including limitations and responsible AI considerations.",
-  github: "https://github.com/AdriyellLopis/civicroute-ai-",
-  demo: "https://civicroute-ai.streamlit.app/"
-}
 ];
 
 export const education = [
