@@ -1,23 +1,58 @@
-# Hi, I'm Adriyell Lopis 👋
+# Adriyell Lopis – Portfolio
 
-IT professional with a Diploma in IT (Network Management) from IIE Rosebank College, based in Johannesburg. I'm currently a Digital Associate on the CAPACITI programme, building AI and data projects alongside my networking background.
+My professional portfolio, bringing together my Network Management background, IT experience, CAPACITI Digital Associate projects, certifications and CV in one place.
 
-## What I work on
-- **Network Management & IT infrastructure:** troubleshooting, user support, system implementation
-- **Applied AI:** prompt engineering, text classification, sentiment analysis, AI workflows
+**[🔗 Live site](https://adriyell-portfolio-3o96.vercel.app/)**
 
-## Featured projects
-| Project | What it does | Tech | Demo |
-|---|---|---|---|
-| [Review Radar](https://github.com/AdriyellLopis/review-radar-dashboard) | Sentiment dashboard for real Amazon reviews | Python, Streamlit, Pandas | [Live](https://review-radar-dashb.streamlit.app/) |
-| [CivicRoute](https://github.com/AdriyellLopis/civicroute-ai) | Routes municipal complaints by type and urgency | Python, scikit-learn, Streamlit | [Live](https://civicroute-ai.streamlit.app/) |
-| [PromptForge](https://github.com/AdriyellLopis/promptforge-ai-content-generator) | AI content generator with a prompt library | JavaScript, Gemini API, Vercel | [Live](https://promptforge-ai-content-generator.vercel.app) |
-| [Portfolio](https://github.com/AdriyellLopis/adriyell-portfolio) | My professional portfolio site | Next.js, TypeScript, Tailwind | [Live](https://adriyell-portfolio-3o96.vercel.app/) |
+<img width="1600" height="740" alt="portfolio_image" src="https://github.com/user-attachments/assets/6d16600d-93fc-4d4b-a1bd-a2fdc81f3d81" />
 
-## Skills
-**Networking:** Network administration, troubleshooting, Fortinet, network security fundamentals
-**Languages and tools:** Python, JavaScript, TypeScript, Streamlit, scikit-learn, Git/GitHub, Vercel
-**AI:** Generative AI, prompt engineering, NLP basics
+## What it includes
 
-## Connect
-[Portfolio](https://adriyell-portfolio-3o96.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/adriyell-lopis-563921337) · lopisadriyell@gmail.com
+- About, career focus and work experience
+- Skills grouped by area: networking, cybersecurity, AI and professional skills
+- Featured projects with problem, solution and my contribution, each with GitHub and live demo links
+- Education and certifications
+- Downloadable CV
+- Contact section with LinkedIn, GitHub and email
+
+## Tech stack
+
+Next.js · React · TypeScript · Tailwind CSS · Motion · Deployed on Vercel
+
+## Run it locally
+
+You need Node.js 18 or newer.
+
+```bash
+git clone https://github.com/AdriyellLopis/adriyell-portfolio.git
+cd adriyell-portfolio
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+To create a production build:
+
+```bash
+npm run build
+npm start
+```
+
+## Project structure
+
+| Folder | Purpose |
+| --- | --- |
+| `app/` | Pages and layout (Next.js App Router) |
+| `components/` | Reusable UI sections |
+| `lib/` | Shared data and helpers |
+| `public/` | Images and the CV PDF |
+
+## Deployment
+
+Pushes to `main` deploy automatically through Vercel.
+
+## Author
+
+Adriyell Lopis · IT Professional | Network Management | Digital Associate
+[LinkedIn](https://www.linkedin.com/in/adriyell-lopis-563921337) · lopisadriyell@gmail.com
